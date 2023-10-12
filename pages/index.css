@@ -1,0 +1,8 @@
+@import url(/fonts.css);
+
+.testing {
+    font-family: "Inter";
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+}
