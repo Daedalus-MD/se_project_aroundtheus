@@ -82,3 +82,42 @@
     object-fit: cover;
     margin-right: 24px;
 }
+
+.cards {
+
+}
+
+.card__list {
+    display: grid;
+    list-style-type: none;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit 282px);
+    grid-gap: 17px 20px;
+}
+
+.card {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.card__image {
+    max-width: 282px;
+    max-height: 282px;
+}
+
+.card__description {
+    background: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: black;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__like-button {
+    background: transparent url(...)
+}
