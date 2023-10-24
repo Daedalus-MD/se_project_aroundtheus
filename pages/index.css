@@ -3,6 +3,7 @@
 .page {
     background: black;
     color: white;
+    font-family: "Inter", Arial, sans-serif;
 }
 
 .page__section {
@@ -45,14 +46,15 @@
 }
 
 .profile__edit-button {
-    background: transparent url(/images/Edit.svg) center no-repeat;
+    background-image: url(../images/Edit.svg);
+    background-repeat: no-repeat;
     height: 24px;
     width: 24px;
     
 }
 
 .profile__add-button {
-    background: transparent url(/images/like-button.svg) center no-repeat;
+    background: transparent url(/images/l) center no-repeat;
     width: 150px;
     height: 50px;
     margin-left: auto;
@@ -136,6 +138,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: gray;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width:480px){
