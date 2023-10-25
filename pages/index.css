@@ -43,18 +43,21 @@
     "title button"
     "description description";
     grid-template-columns: minmax(auto, 373px) auto;
+    
 }
 
 .profile__edit-button {
     background-image: url(../images/Edit.svg);
     background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
     height: 24px;
     width: 24px;
     
 }
 
 .profile__add-button {
-    background: transparent url(/images/l) center no-repeat;
+    
     width: 150px;
     height: 50px;
     margin-left: auto;
@@ -127,7 +130,13 @@
 }
 
 .card__like-button {
-    background: transparent url(/images/like-button.svg) center no-repeat;
+    background-image:(../images/like.svg)
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    height: 18px;
+    width: 21px;
+    border: none;
 }
 
 .footer__text {
