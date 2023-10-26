@@ -103,7 +103,7 @@
     margin-top: 30px;
 }
 
-.card__list {
+.cards__list {
     display: grid;
     list-style-type: none;
     justify-content: center;
@@ -125,7 +125,7 @@
     border-radius: 10px 10px 0 0;
 }
 
-.cards__description {
+.card__description {
     background: white;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -156,7 +156,7 @@
     border: none;
 }
 
-.card__like-button {
+.card__like-button:hover {
     cursor: pointer;
 }
 
