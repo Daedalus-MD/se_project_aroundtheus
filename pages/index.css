@@ -110,7 +110,7 @@
     grid-template-columns: repeat(auto-fit, 282px);
     grid-gap: 20px 17px;
     padding: 0px;
-    margin: 0px;
+    margin: 72px 0 0 0;
 }
 
 .card {
@@ -136,6 +136,14 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 10px 10px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .card__like-button {
@@ -161,6 +169,7 @@
     text-align: left;
     color: gray;
     margin-bottom: 60px;
+    margin-top: 67px;
 }
 
 @media screen and (max-width:480px){
