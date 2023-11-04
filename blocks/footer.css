@@ -13,5 +13,10 @@
 @media screen and (max-width:480px){
 .footer__text{
     font-size: 14px;
+    line-height: normal;
+    margin-top: 46px;
+    margin-bottom: 36px;
+    margin-left: 19px;
 }
+
 }
