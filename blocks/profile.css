@@ -37,6 +37,7 @@
   width: 24px;
   margin-left: 18px;
   border: 1px solid #ffffff;
+  align-items: flex-end;
 }
 
 .profile__edit-button:hover {
@@ -119,10 +120,9 @@
 
   .profile__edit-button {
     margin-left: 10px;
-    margin-bottom: 6px;
+    margin-bottom: -26px;
     width: 18px;
     height: 18px;
-    bottom: 0px;
   }
 
   .profile__image {
