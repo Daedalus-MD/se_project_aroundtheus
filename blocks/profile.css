@@ -16,7 +16,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 800px;
 }
 
 .profile__info {
@@ -24,13 +23,12 @@
   grid-template-areas:
     "title button"
     "description description";
-  grid-template-columns: minmax(auto, 373px) auto;
+  grid-template-columns: minmax(auto, 500px) auto;
   padding: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   align-items: center;
-  width: 373px;
 }
 
 .profile__edit-button {
