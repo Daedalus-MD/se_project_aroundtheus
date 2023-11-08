@@ -23,9 +23,8 @@
   grid-template-areas:
     "title button"
     "description description";
-  grid-template-columns: minmax(auto, 273px) auto;
+  grid-template-columns: minmax(auto, 500px) auto;
   padding: 0;
-  text-overflow: ellipsis;
 }
 
 .profile__edit-button {
