@@ -11,15 +11,25 @@
   justify-content: center;
 }
 
+.modal__heading {
+  font-size: 14px;
+  font-style: inter;
+  font-weight: 900;
+  line-height: 16.94px;
+  color: black;
+  margin-top: 0px;
+  top: 100px;
+}
 .modal__open {
   display: flex;
 }
 .modal__container {
   position: relative;
-  padding: 36px;
+  padding: 25px 22px 25px 22px;
   background-color: #fff;
   margin: auto;
   border-radius: 10px;
+  top: 245px;
 }
 
 .modal__close {
@@ -34,4 +44,26 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form_description {
+  margin-top: 23px;
+  margin-bottom: 55px;
+}
+
+.modal__form_title {
+}
+
+.modal__button {
+  background-color: black;
+  color: white;
+  height: 46px;
+  font: inter;
+  font-size: 14px;
+  font-weight: 400px;
 }
