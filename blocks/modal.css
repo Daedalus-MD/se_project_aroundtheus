@@ -49,11 +49,11 @@
 .modal__form {
   display: flex;
   flex-direction: column;
+  height: 27px;
 }
 
 .modal__form_description {
   margin-top: 23px;
-  margin-bottom: 55px;
 }
 
 .modal__form_title {
@@ -66,4 +66,5 @@
   font: inter;
   font-size: 14px;
   font-weight: 400px;
+  margin-top: 50px;
 }
