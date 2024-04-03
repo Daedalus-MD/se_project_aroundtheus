@@ -27,6 +27,12 @@ const initialCards = [
 
 const ProfileEditBtn = document.querySelector(".profile__edit-button");
 const ProfileEditModal = document.querySelector(".modal");
+const ProfileTitle = document.querySelector(".profile__title");
+const ProfileName = document.querySelector(".Profile__Description");
+const ProfileTitleName = document.querySelector("#Profile__Name-Input");
+const ProfileTitleDescription = document.querySelector(
+  "#Profile__Description-Input"
+);
 ProfileEditBtn.addEventListener("click", () => {
   ProfileEditModal.classList.add("modal__open");
 });
