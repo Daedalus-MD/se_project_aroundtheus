@@ -119,11 +119,11 @@
     font-weight: 400px;
     margin-top: 50px;
   }
-}
 
-.modal__close {
-  top: -45px;
-  right: 0px;
-  width: 26px;
-  height: 26px;
+  .modal__close {
+    top: -45px;
+    right: 0px;
+    width: 26px;
+    height: 26px;
+  }
 }
