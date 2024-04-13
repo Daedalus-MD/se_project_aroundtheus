@@ -55,13 +55,13 @@
   flex-direction: column;
 }
 
-.modal__form__description {
+.modal__form-description {
   margin-top: 23px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-.modal__form__title {
+.modal__form-title {
   margin-top: 85px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
