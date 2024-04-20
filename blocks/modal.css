@@ -79,7 +79,8 @@
   font-size: 14px;
   font-weight: 400px;
   margin-top: 45px;
-  margin-bottom: 36px; /* Adjusted margin-bottom value for desktop */
+  margin-bottom: 36px;
+  height: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -100,10 +101,10 @@
   .modal__heading {
     margin-bottom: 0px;
     font-family: Inter;
-    font-size: 24px;
     font-weight: 900;
     line-height: 29.05px;
     text-align: left;
+    font-size: 18px;
   }
 
   .modal__button {
