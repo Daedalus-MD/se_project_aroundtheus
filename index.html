@@ -46,7 +46,28 @@
         <p class="footer__text">&copy; Robert Bedea</p>
       </footer>
     </div>
-    <div class="modal">
+    <div class="modal" id="edit_modal">
+      <div class="modal__container">
+        <button class="modal__close"></button>
+        <p class="modal__heading">Edit Profile</p>
+        <form class="modal__form">
+          <input
+            type="text"
+            id="Profile__Title-Input"
+            class="modal__form-title"
+          />
+          <input
+            type="text"
+            id="Profile__Description-Input"
+            placeholder="description"
+            class="modal__form-description"
+          />
+          <button class="modal__button">Save</button>
+        </form>
+      </div>
+    </div>
+    <!-- MODAL IMAGE -->
+    <div class="modal" id="image_modal">
       <div class="modal__container">
         <button class="modal__close"></button>
         <p class="modal__heading">Edit Profile</p>

@@ -24,25 +24,29 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
   },
 ];
+
 const profileEditBtn = document.querySelector(".profile__edit-button");
-const profileEditModal = document.querySelector(".modal");
+const profileEditModal = document.querySelector("#edit_modal");
 const profileTitleName = document.querySelector(".profile__title");
 const profileTitleDescription = document.querySelector(".profile__description");
 const profileTitleNameInput = document.querySelector("#Profile__Title-Input");
 const profileTitleDescriptionInput = document.querySelector(
   "#Profile__Description-Input"
 );
+const addnewcardButton = document.querySelector(".Profile__add-button");
 
 function closePopup() {
   profileEditModal.classList.remove("modal_open");
 }
 
 const profileEditForm = profileEditModal.querySelector(".modal__form");
+
 profileEditBtn.addEventListener("click", () => {
   profileEditModal.classList.add("modal_open");
   profileTitleNameInput.value = profileTitleName.textContent;
   profileTitleDescriptionInput.value = profileTitleDescription.textContent;
 });
+
 const profileModalCloseBtn = document.querySelector(".modal__close");
 profileModalCloseBtn.addEventListener("click", () => {
   closePopup();
@@ -50,7 +54,6 @@ profileModalCloseBtn.addEventListener("click", () => {
 
 profileEditForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("form submitted");
   profileTitleName.textContent = profileTitleNameInput.value;
   profileTitleDescription.textContent = profileTitleDescriptionInput.value;
   closePopup();
