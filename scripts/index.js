@@ -34,6 +34,13 @@ const profileTitleDescriptionInput = document.querySelector(
   "#Profile__Description-Input"
 );
 const addnewcardButton = document.querySelector(".Profile__add-button");
+const likeButtons = document.querySelectorAll(".card__like-button");
+
+likeButtons.forEach((likeButton) => {
+  likeButton.addEventListener("click", () => {
+    console.log("test");
+  });
+});
 
 function closePopup() {
   profileEditModal.classList.remove("modal_open");
@@ -50,6 +57,7 @@ profileEditBtn.addEventListener("click", () => {
 const profileModalCloseBtn = document.querySelector(".modal__close");
 profileModalCloseBtn.addEventListener("click", () => {
   closePopup();
+  console.log("test");
 });
 
 profileEditForm.addEventListener("submit", (e) => {
