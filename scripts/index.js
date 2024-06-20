@@ -36,7 +36,10 @@ const profileTitleDescriptionInput = document.querySelector(
 const addnewcardButton = document.querySelector(".Profile__add-button");
 const likeButtons = document.querySelectorAll(".card__like-button");
 
+console.log(likeButtons.length); // To check the number of buttons selected
+
 likeButtons.forEach((likeButton) => {
+  console.log(likeButton); // To ensure we are selecting the correct elements
   likeButton.addEventListener("click", () => {
     console.log("test");
   });
@@ -47,6 +50,12 @@ function closePopup() {
 }
 
 const profileEditForm = profileEditModal.querySelector(".modal__form");
+
+profileEditBtn.addEventListener("click", () => {
+  profileEditModal.classList.add("modal_open");
+  profileTitleNameInput.value = profileTitleName.textContent;
+  profileTitleDescriptionInput.value = profileTitleDescription.textContent;
+});
 
 profileEditBtn.addEventListener("click", () => {
   profileEditModal.classList.add("modal_open");
