@@ -57,7 +57,7 @@ profileEditBtn.addEventListener("click", () => {
   profileTitleDescriptionInput.value = profileTitleDescription.textContent;
 });
 
-profileEditBtn.addEventListener("click", () => {
+addnewcardButton.addEventListener("click", () => {
   profileEditModal.classList.add("modal_open");
   profileTitleNameInput.value = profileTitleName.textContent;
   profileTitleDescriptionInput.value = profileTitleDescription.textContent;
