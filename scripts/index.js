@@ -33,8 +33,6 @@ const profileTitleNameInput = document.querySelector("#Profile__Title-Input");
 const profileTitleDescriptionInput = document.querySelector(
   "#Profile__Description-Input"
 );
-const addnewcardButton = document.querySelector(".Profile__add-button");
-const likeButtons = document.querySelectorAll(".card__like-button");
 
 console.log(likeButtons.length); // To check the number of buttons selected
 
