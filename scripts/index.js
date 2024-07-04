@@ -34,14 +34,20 @@ const profileTitleDescriptionInput = document.querySelector(
   "#Profile__Description-Input"
 );
 
-console.log(likeButtons.length); // To check the number of buttons selected
+const addnewcardButton = document.querySelector(".profile__add-button");
 
-likeButtons.forEach((likeButton) => {
-  console.log(likeButton); // To ensure we are selecting the correct elements
-  likeButton.addEventListener("click", () => {
-    console.log("test");
-  });
-});
+const likeButtons = document.querySelectorAll(".card__like-button");
+
+const cardAddBtn = document.querySelector(".card__add-button");
+const cardEditModal = document.querySelector("#image_modal");
+const cardTitleName = document.querySelector(".modal__form-title");
+const cardTitleDescription = document.querySelector(".modal__form-description");
+const cardTitleNameInput = document.querySelector("#card__Title-Input");
+const cardTitleDescriptionInput = document.querySelector(
+  "#card__Description-Input"
+);
+
+console.log(likeButtons.length); // To check the number of buttons selected
 
 function closePopup() {
   profileEditModal.classList.remove("modal_open");
@@ -56,7 +62,7 @@ profileEditBtn.addEventListener("click", () => {
 });
 
 addnewcardButton.addEventListener("click", () => {
-  profileEditModal.classList.add("modal_open");
+  cardEditModal.classList.add("modal_open");
   profileTitleNameInput.value = profileTitleName.textContent;
   profileTitleDescriptionInput.value = profileTitleDescription.textContent;
 });
@@ -73,7 +79,6 @@ profileEditForm.addEventListener("submit", (e) => {
   profileTitleDescription.textContent = profileTitleDescriptionInput.value;
   closePopup();
 });
-
 function createCard(cardData) {
   const cardTemplate =
     document.querySelector("#card-template").content.firstElementChild;
@@ -84,7 +89,16 @@ function createCard(cardData) {
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
   cardTitleEl.textContent = cardData.name;
-
+  const likeButton = cardElement.querySelector(".card__like-button");
+  likeButton.addEventListener("click", () => {
+    if (
+      likeButton.style.backgroundImage === 'url("../images/like-button.svg")'
+    ) {
+      likeButton.style.backgroundImage = 'url("../images/Union.svg")';
+    } else {
+      likeButton.style.backgroundImage = 'url("../images/like-button.svg")';
+    }
+  });
   return cardElement;
 }
 
